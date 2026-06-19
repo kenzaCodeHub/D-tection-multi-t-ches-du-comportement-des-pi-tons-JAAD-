@@ -52,7 +52,7 @@ Le découpage est réalisé **par vidéo** (`GroupShuffleSplit`) : aucune image 
 
 Les deux tâches sont **déséquilibrées** (surtout LOOKING, ~18 % de `looking`), ce qui motive le choix de la fonction de perte ci-dessous.
 
-![Distribution du dataset](figures/dataset_distribution.png)
+![Distribution du dataset](dataset_distribution.png)
 
 ---
 
@@ -91,11 +91,11 @@ Rapport de classification détaillé :
 
 ### Courbes d'entraînement
 
-![Courbes d'entraînement](figures/training_curves.png)
+![Courbes d'entraînement](training_curves.png)
 
 ### Matrices de confusion
 
-![Matrices de confusion](figures/confusion_matrices.png)
+![Matrices de confusion](confusion_matrices.png)
 
 > **Lecture honnête des résultats.** La classe minoritaire `looking` reste la plus difficile (F1 ≈ 0,57) : le modèle la détecte correctement dans ~61 % des cas, ce qui est attendu vu sa rareté dans JAAD. Travailler à partir d'un seul crop, sans contexte temporel, est aussi une limite assumée (voir Pistes d'amélioration).
 
